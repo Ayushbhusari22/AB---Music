@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="icon" type="image/png" sizes="35x35" href="/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="19x19" href="/favicon-32x32.png">
+    <link rel="stylesheet" href="/calc/calc.css">
+</head>
+
+<body>
+    <fieldset>
+
+        <div class="calculator">
+            <button type="button" class="DnT" onclick="document.getElementById('DnT').innerHTML= Date()">
+                Date & Time</button>
+            <p id="DnT"></p>
+            <input type="text" class="display" id="result">
+            <div class="buttons">
+                <button class="btn" onclick="calculator.clearDisplay()">AC</button>
+                <button class="btn" onclick="calculator.backspace()">←</button>
+                <button class="btn" onclick="calculator.appendNumber('.')">.</button>
+                <button class="btn">ON</button>
+                <button class="btn" onclick="calculator.appendNumber(1)">1</button>
+                <button class="btn" onclick="calculator.appendNumber(2)">2</button>
+                <button class="btn" onclick="calculator.appendNumber(3)">3</button>
+                <button class="btn operator" onclick="calculator.appendOperator('+')">+</button>
+                <button class="btn" onclick="calculator.appendNumber(4)">4</button>
+                <button class="btn" onclick="calculator.appendNumber(5)">5</button>
+                <button class="btn" onclick="calculator.appendNumber(6)">6</button>
+                <button class="btn operator" onclick="calculator.appendOperator('-')">-</button>
+                <button class="btn" onclick="calculator.appendNumber(7)">7</button>
+                <button class="btn" onclick="calculator.appendNumber(8)">8</button>
+                <button class="btn" onclick="calculator.appendNumber(9)">9</button>
+                <button class="btn operator" onclick="calculator.appendOperator('*')">*</button>
+                <button class="btn" onclick="calculator.appendNumber(0)">0</button>
+                <button class="btn operator" onclick="calculator.appendOperator('/')">/</button>
+                <button class="btn operator" onclick="calculator.appendOperator('%')">%</button>
+                <button class="btn equal" onclick="calculator.calculate()">=</button>
+            </div>
+        </div>
+    </fieldset>
+    <script src="/calc/calc.js"></script>
+</body>
+
+</html>

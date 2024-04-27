@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - AB Music</title>
+    <link rel="icon" type="image/png" sizes="35x35" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="19x19" href="/favicon-16x16.png">
+    <!-- <link rel="stylesheet" href="login.css"> -->
+    <style>
+        /* internal css */
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+        body {
+            font-family: "Poppins", sans-serif;
+            backdrop-filter: blur(24px);
+            -webkit-backdrop-filter: blur(24px);
+            background: rgb(82, 31, 144);
+            background: radial-gradient(circle, rgba(82, 31, 144, 1) 20%, rgba(45, 5, 94, 1) 70%, rgba(45, 5, 94, 1) 90%);
+        }
+
+        form {
+            width: 45%;
+            margin: auto;
+            margin-top: 20px;
+            padding: 20px;
+            background-color: #CCCCFF;
+            border-radius: 10px;
+            transition: opacity .4s;
+            box-shadow: 0px 1px 20px 20px rgba(45, 5, 94, 1);
+        }
+
+        fieldset {
+            /* border: 1px solid #4B0082; */
+            border: none;
+            outline: none;
+            border-radius: 5px;
+            margin-bottom: 50px;
+        }
+
+        label {
+            font-weight: bold;
+            color: #030360;
+            font-size: 18px;
+        }
+
+
+
+        input[type="text"],
+        textarea {
+            width: 90%;
+            padding: 15px;
+            /* margin-bottom: 10px; */
+            border: 2px solid #33006F;
+            border-radius: 10px;
+            background-color: #CCCCFF;
+            font-size: 19px;
+            outline: none;
+        }
+
+        .login__signup {
+            margin-bottom: 10px;
+            text-align: center;
+            display: block;
+        }
+
+        .login__signup a {
+            font-weight: bold;
+            color: #030360;
+        }
+
+        .login__forgot {
+            display: block;
+            font-weight: bold;
+            color: #030360;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .login__button {
+            display: inline-block;
+            background-color: #33006F;
+            width: 100%;
+            color: #fff;
+            /* font-weight: bold; */
+            font-size: 19px;
+            padding: 15px;
+            border-radius: 20px;
+            cursor: pointer;
+            transition: box-shadow .4s;
+            border: none;
+            outline: none;
+        }
+
+        .login__button:hover {
+            font-size: 20px;
+        }
+
+        /* Show login */
+        .show-login {
+            opacity: 1;
+            pointer-events: initial;
+        }
+
+        .show-login .login__form {
+            transform: translateY(0);
+        }
+
+        .logobase {
+            display: flex;
+            align-items: center;
+            margin-top: 20px;
+            margin-left: 20px;
+            gap: 5px;
+            font-size: 20px;
+            font-family: "Aref Ruqaa Ink", serif;
+            font-weight: bold;
+            color: #ffffff;
+        }
+
+        .logobase img {
+            height: auto;
+            width: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="logobase"><img src="/favicon.png" alt="logo">AB Music
+    </div>
+    <!-- Action attribute -->
+    <form action="/index.html" target="_blank" autocomplete="on" novalidate>
+        <!-- <h5 style="color: red;"><em>* Mandatory fields</em></h5> inline css -->
+        <fieldset>
+            <h2 style="color: #00308F; text-align: center; font-size: 25px;">Log in to AB-Music</h2>
+            <!-- label element -->
+            <!-- <h3 style="color: #3F00FF;">Personal Information</h3> -->
+            <label for="fname">Email </label><br>
+            <input type="text" id="fname" name="fname" placeholder="Email"><br><br>
+            <label for="mname">Password</label><br>
+            <input type="text" id="mname" name="mname" placeholder="Password"><br>
+            <i i class="bi bi-eye-slash-fill"></i>
+            <br><br>
+
+            <div>
+                <p class="login__signup">
+                    You do not have an account? <a href="/signup/signup.html">Sign up</a>
+                </p>
+
+                <a href="#" class="login__forgot">
+                    You forgot your password
+                </a>
+
+            </div>
+            <button type="submit" class="login__button">Log in</button>
+    </form>
+</body>
+
+</html>

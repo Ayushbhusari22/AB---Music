@@ -1,0 +1,76 @@
+ body {
+     height: 800px;
+     font-family: "Poppins", sans-serif;
+
+     background: rgb(82, 31, 144);
+
+     background: radial-gradient(circle, rgba(82, 31, 144, 1) 20%, rgba(45, 5, 94, 1) 70%, rgba(45, 5, 94, 1) 90%);
+ }
+
+
+ fieldset {
+     width: 550px;
+     max-height: 1000px;
+     border-radius: 10px;
+     align-items: center;
+     border: 5px solid black;
+     background-color: #1E1E1E;
+     color: white;
+     margin: 0 auto;
+     padding: 20px
+ }
+
+ .calculator .DnT {
+     background-color: #8db63a;
+     font-size: 15px;
+     border-radius: 5px;
+     outline: none;
+     border: none;
+     padding: 10px;
+     font-weight: 600;
+     width: 10vw;
+     cursor: pointer;
+ }
+
+ .display {
+     width: 95%;
+     height: 100px;
+     padding: 10px;
+     border: 3px solid rgb(169, 168, 168);
+     text-align: right;
+     font-size: 100px;
+     border-radius: 5px;
+     background-color: #474545;
+     color: white;
+
+ }
+
+
+ .btn {
+     width: 20%;
+     height: 80px;
+     border: 2px solid black;
+     background-color: #b0cba2;
+     font-size: 30px;
+     margin: 10px;
+     border-radius: 80px;
+     cursor: pointer;
+ }
+
+ .operator {
+     background-color: #9ACD32;
+ }
+
+ .clear {
+     background-color: lightgray;
+ }
+
+ .equal {
+     background-color: #1DB954;
+
+ }
+
+ .equal:hover {
+     background-color: #08AEEA;
+     background-image: linear-gradient(0deg, #08AEEA 0%, #2AF598 100%);
+ }

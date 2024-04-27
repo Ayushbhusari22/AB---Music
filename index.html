@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AB-Music</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="/ab.css">
+    <link rel="stylesheet" href="/utility.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="35x35" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="19x19" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+</head>
+
+<body>
+    <div class="container flex">
+        <div class="left">
+            <div class="home">
+                <div class="logobase"><img src="/favicon.png" alt="logo">AB Music
+                </div>
+                <ul>
+                    <li>
+                        <a href="/index.html">
+                            <img class="invert" src="/set/images/home.svg" alt="">Home</a>
+                    </li>
+                    <li class="search">
+                        <a href="">
+                            <img class="invert" src="/set/images/search.svg" alt="">Search</a>
+                    </li>
+                    <!-- <li><img class="invert" src="set/images/Albums.svg" alt="search">Album</li> -->
+                    <li><img class="invert" src="/set/images/person.svg" alt="search">Artists</li>
+                    <h4>Library</h4>
+                    <li><img class="invert" src="/set/images/recent.svg" alt="home">Recents</li>
+                    <li><img class="invert" src="/set/images/fav.svg" alt="search">Favourites</li>
+                    <li><img class="invert" src="/set/images/folder.svg" alt="search">Local</li>
+                    <h4>Playlists</h4>
+                    <li><img class="invert" src="/set/images/create.svg" alt="search">Create</li>
+                </ul>
+                <div class="buttons">
+                    <form action="/login/login.html" autocomplete="on" novalidate>
+                        <button type="submit">
+                            <li><img class="invert" src="/set/images/logout.svg" alt="">Log Out</li>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <div class="right">
+            <div class="header">
+                <div class="nav">
+                    <div class="search">
+                        <input type="text" placeholder="Search..." id="search-btn">
+                        <i class="bi bi-search" id="search_icon"></i>
+                        <div class="search_result">
+                            <!-- <a href="#" class="view">
+                                <img src="cover/1.jpeg" alt="">
+                                <div class="content">
+                                    Relief
+                                    <div class="subtitle">Hang Øver</div>,
+                                </div>
+                            </a> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="playlists">
+                <h3> Top Playlists</h3>
+                <div class="cardContainer">
+                    <div class="card">
+                        <div class="play">
+                            <!-- <i class="bi bi-play-fill" class="play"></i> -->
+
+                        </div>
+                        <img src="/set/images/mix.jpeg" alt="">
+                        <h5>Mega Hit Mix</h5>
+                        <!-- <h6>A mega mix of 10 favorites from the last few years!</h6> -->
+                    </div>
+                    <div class="card">
+                        <div class="play">
+                            <!-- <i class="bi bi-play-fill"></i> -->
+
+                        </div>
+                        <img src="/set/images/english.jpeg" alt="">
+                        <h5>Top English</h5>
+                        <!-- <h6>A mega mix of 75 favorites from the last few years!</h6> -->
+                    </div>
+                    <div class="card">
+                        <div class="play">
+                            <!-- <i class="bi bi-play-fill"></i> -->
+
+                        </div>
+                        <img src="/set/images/bass.jpeg" alt="">
+                        <h5>Feel The Bass</h5>
+                        <!-- <h6>A mega mix of 75 favorites from the last few years!</h6> -->
+                    </div>
+                    <div class="card">
+                        <div class="play">
+                            <!-- <i class="bi bi-play-fill"></i> -->
+                        </div>
+                        <img src="/set/images/hindi.jpeg" alt="">
+                        <h5>Mega Hit Hindi</h5>
+                        <!-- <h6>A mega mix of 75 favorites from the last few years!</h6> -->
+                    </div>
+                    <div class="card">
+                        <div class="play">
+                            <!-- <i class="bi bi-play-fill"></i> -->
+
+                        </div>
+                        <img src="/set/images/marathi.jpeg" alt="">
+                        <h5>Mega Hit Marathi</h5>
+                        <!-- <h6>A mega mix of 75 favorites from the last few years!</h6> -->
+                    </div>
+                    <div class="card">
+                        <div class="play">
+                            <!-- <i class="bi bi-play-fill"></i> -->
+                        </div>
+                        <img src="/set/images/tamil.jpeg" alt="">
+                        <h5>Mega Hit Mix</h5>
+                        <!-- <h6>A mega mix of 75 favorites from the last few years!</h6> -->
+                    </div>
+
+                </div>
+            </div>
+
+
+            <!-- songs  -->
+            <div class="menu_song">
+                <li class="songItem">
+                    <span>01</span>
+                    <img src="/cover/1.jpeg" alt="">
+                    <h5>Relief<br>
+                        <div class="subtitle">Hang Øver</div>
+                    </h5>
+                    <i class="bi playListPlay bi-play-fill" id="1"></i>
+
+                </li>
+                <li class="songItem">
+                    <span>02</span>
+                    <img src="/cover/2.jpeg" alt="">
+                    <h5>Dandelions<br>
+                        <div class="subtitle">Ruth B.</div>
+                    </h5>
+                    <i class="bi playListPlay bi-play-fill" id="2"></i>
+
+
+                </li>
+                <li class="songItem">
+                    <span>03</span>
+                    <img src="/cover/3.jpeg" alt="">
+                    <h5>Thunder<br>
+                        <div class="subtitle">Imagine Dragons</div>
+                    </h5>
+                    <i class="bi playListPlay bi-play-fill" id="3"></i>
+                </li>
+                <li class="songItem">
+                    <span>04</span>
+                    <img src="/cover/4.jpeg" alt="">
+                    <h5>Bones<br>
+                        <div class="subtitle">Imagine Dragons</div>
+                    </h5>
+                    <i class="bi playListPlay bi-play-fill" id="4"></i>
+
+
+                </li>
+                <li class="songItem">
+                    <span>05</span>
+                    <img src="/cover/5.jpeg" alt="">
+                    <h5>On My Way<br>
+                        <div class="subtitle">Alan Walker , K-391 , Emelie Hollow</div>
+                    </h5>
+                    <i class="bi playListPlay bi-play-fill" id="5"></i>
+
+
+                </li>
+                <li class="songItem">
+                    <span>06</span>
+                    <img src="/cover/6.jpeg" alt="">
+                    <h5>Sunflower<br>
+                        <div class="subtitle">Post Malone , Swae Lee</div>
+                    </h5>
+                    <i class="bi playListPlay bi-play-fill" id="6"></i>
+
+
+                </li>
+                <li class="songItem">
+                    <span>07</span>
+                    <img src="/cover/7.jpeg" alt="">
+                    <h5>Faded<br>
+                        <div class="subtitle">Alan Walker</div>
+                    </h5>
+                    <i class="bi playListPlay bi-play-fill" id="7"></i>
+
+
+                </li>
+                <li class="songItem">
+                    <span>08</span>
+                    <img src="/cover/8.jpeg" alt="">
+                    <h5>Closer<br>
+                        <div class="subtitle">The Chainsmokers , Halsey</div>
+                    </h5>
+                    <i class="bi playListPlay bi-play-fill" id="8"></i>
+
+
+                </li>
+                <li class="songItem">
+                    <span>09</span>
+                    <img src="/cover/9.jpeg" alt="">
+                    <h5>Let Me Love You<br>
+                        <div class="subtitle">DJ Snake , Justin Bieber</div>
+                    </h5>
+                    <i class="bi playListPlay bi-play-fill" id="9"></i>
+
+                </li>
+                <li class="songItem">
+                    <span>10</span>
+                    <img src="/cover/10.jpeg" alt="">
+                    <h5>Night Changes<br>
+                        <div class="subtitle">One Direction</div>
+                    </h5>
+                    <i class="bi playListPlay bi-play-fill" id="10"></i>
+
+                </li>
+                <li class="songItem">
+                    <span>11</span>
+                    <img src="/cover/11.jpeg" alt="">
+                    <h5>One Call Away<br>
+                        <div class="subtitle">Charlie Puth</div>
+                    </h5>
+                    <i class="bi playListPlay bi-play-fill" id="11"></i>
+
+                </li>
+                <li class="songItem">
+                    <span>12</span>
+                    <img src="/cover/12.jpeg" alt="">
+                    <h5>Something Just Like This<br>
+                        <div class="subtitle">The Chainsmokers , Coldplay</div>
+                    </h5>
+                    <i class="bi playListPlay bi-play-fill" id="12"></i>
+
+                </li>
+                <li class="songItem">
+                    <span>13</span>
+                    <img src="/cover/13.jpeg" alt="">
+                    <h5>Darkside<br>
+                        <div class="subtitle">Alan Walker</div>
+                    </h5>
+                    <i class="bi playListPlay bi-play-fill" id="13"></i>
+
+                </li>
+                <li class="songItem">
+                    <span>14</span>
+                    <img src="/cover/14.jpeg" alt="">
+                    <h5>Despacito - Remix<br>
+                        <div class="subtitle">Luis Fonsi ,Daddy Yankee , Justin Bieber</div>
+                    </h5>
+                    <i class="bi playListPlay bi-play-fill" id="14"></i>
+
+                </li>
+                <li class="songItem">
+                    <span>15</span>
+                    <img src="/cover/15.jpeg" alt="">
+                    <h5>Alone<br>
+                        <div class="subtitle">Alan Walker</div>
+                    </h5>
+                    <i class="bi playListPlay bi-play-fill" id="15"></i>
+
+                </li>
+                <li class="songItem">
+                    <span>16</span>
+                    <img src="/cover/16.jpeg" alt="">
+                    <h5>Ek Din Teri Raahon<br>
+                        <div class="subtitle">Javed Ali , Pritam</div>
+                    </h5>
+                    <i class="bi playListPlay bi-play-fill" id="16"></i>
+
+                </li>
+                <li class="songItem">
+                    <span>17</span>
+                    <img src="/cover/17.jpeg" alt="">
+                    <h5>Teri Yaddon Mein<br>
+                        <div class="subtitle">KK , Shreya Ghoshal</div>
+                    </h5>
+                    <i class="bi playListPlay bi-play-fill" id="17"></i>
+
+                </li>
+                <li class="songItem">
+                    <span>18</span>
+                    <img src="/cover/18.jpeg" alt="">
+                    <h5>Jeena Jeena<br>
+                        <div class="subtitle">Atif Aslam</div>
+                    </h5>
+                    <i class="bi playListPlay bi-play-fill" id="18"></i>
+
+                </li>
+                <li class="songItem">
+                    <span>19</span>
+                    <img src="/cover/19.jpeg" alt="">
+                    <h5>Tere Hawale<br>
+                        <div class="subtitle">Pritam , Arijit Singh , Shreya Ghoshal</div>
+                    </h5>
+                    <i class="bi playListPlay bi-play-fill" id="19"></i>
+
+                </li>
+                <li class="songItem">
+                    <span>20</span>
+                    <img src="/cover/20.jpeg" alt="">
+                    <h5>Apna Banale<br>
+                        <div class="subtitle">Arijit Singh , Sachin-jigar</div>
+                    </h5>
+                    <i class="bi playListPlay bi-play-fill" id="20"></i>
+
+                </li>
+                <li class="songItem">
+                    <span>21</span>
+                    <img src="/cover/21.jpeg" alt="">
+                    <h5>Apna Banale<br>
+                        <div class="subtitle">Arijit Singh , Sachin-jigar</div>
+                    </h5>
+                    <i class="bi playListPlay bi-play-fill" id="21"></i>
+
+                </li>
+
+                <!-- <li class="songItem">
+                    <span>21</span>
+                    <img src="cover/21.jpeg" alt="">
+                    <h5>Rasiya<br>
+                        <div class="subtitle">Pritam,Arijit Singh,Amitabh Bhattacharya</div>
+                    </h5>
+                    <span class="material-icons playListPlay bi" id="21">
+                        play_arrow
+                    </span> -->
+                </li>
+            </div>
+
+
+
+
+
+
+            <div class="master_play">
+                <i class="bi bi-music-note-beamed note"></i>
+                <img src="/cover/1.jpeg" alt="" id="poster_master_play">
+                <h5 id="title">
+                    Pritam
+                    <div class="subtitle">
+                        Lorem, Nam, porro.
+                    </div>
+                </h5>
+
+
+                <div class="icon">
+                    <i class="bi bi-shuffle shuffle"></i>
+                    <i class="bi bi-skip-start-fill" id="back"></i>
+                    <i class="bi bi-play-fill" id="masterPlay"></i>
+                    <i class="bi bi-skip-end-fill" id="next"></i>
+                </div>
+
+                <span id="currentStart">
+                    0:00
+                </span>
+                <div class="bar">
+                    <input type="range" id="seek" min="0" max="100">
+                    <div class="bar2" id="bar2"></div>
+                    <div class="dot"></div>
+                </div>
+                <span id="currentEnd">
+                    0:00
+                </span>
+
+
+                <div class="vol">
+                    <i class="bi bi-volume-up-fill" id="vol_icon"></i>
+                    <input type="range" min="0" max="100" id="vol">
+                    <div class="vol_bar"></div>
+                    <div class="dot" id="vol_dot"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <script src="/script.js"></script>
+</body>
+
+</html>

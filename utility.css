@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Aref+Ruqaa+Ink:wght@400;700&display=swap');
+
+.material-symbols-outlined {
+    font-variation-settings:
+        'FILL' 0,
+        'wght' 100,
+        'GRAD' 200,
+        'opsz' 48
+}
+
+.material-icons {
+    cursor: pointer;
+
+    font-variation-settings:
+        'FILL' 1,
+        'wght' 200,
+        'GRAD' 200,
+        'opsz' 24
+}
+
+.home .logobase {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    margin-left: 20px;
+    gap: 5px;
+    font-size: 20px;
+    font-family: "Aref Ruqaa Ink", serif;
+    font-weight: bold;
+}
+
+.home .logobase img {
+    height: auto;
+    width: 50px;
+}
+
+
+.flex {
+    display: flex;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.items-center {
+    align-items: center;
+}
+
+.invert {
+    filter: invert(1);
+    /* font-size: 50px; */
+    /* width: 0px; */
+}
+
+/* Custom scrollbar styles for dark-themed websites */
+/* WebKit (Safari, Chrome, etc.) */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #555;
+    /* Color of the scrollbar thumb */
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #777;
+    /* Color of the scrollbar thumb on hover */
+}
+
+::-webkit-scrollbar-track {
+    background-color: #333;
+    /* Color of the scrollbar track */
+}

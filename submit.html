@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="35x35" href="/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="19x19" href="/favicon-32x32.png">
+    <title>Verified - AB Music</title>
+    <style>
+        body {
+            font-family: "Poppins", sans-serif;
+
+            background: rgb(82, 31, 144);
+
+            background: radial-gradient(circle, rgba(82, 31, 144, 1) 20%, rgba(45, 5, 94, 1) 70%, rgba(45, 5, 94, 1) 90%);
+
+        }
+
+        #card {
+            width: 50%;
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: #f0f0f0;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 1px 20px 20px rgba(45, 5, 94, 1);
+        }
+
+        .tick {
+            fill: green;
+            width: 50px;
+            height: 50px;
+            padding: 0 20px 0 20px;
+        }
+
+        #status {
+            font-size: 25px;
+            color: green;
+            font-weight: bold;
+            font-family: cursive;
+        }
+
+        #message {
+            font-size: 20px;
+            text-align: center;
+            font-weight: bold;
+
+        }
+
+        button {
+            background-color: #33006F;
+            width: 50%;
+            color: #fff;
+            margin: 0 5% 10px 5%;
+            /* font-weight: bold; */
+            font-size: 15px;
+            padding: 13px;
+            border-radius: 15px;
+            cursor: pointer;
+            border: none;
+            outline: none;
+            gap: 10px;
+        }
+
+        a {
+            font-family: Arial, Helvetica, sans-serif;
+            color: #fff;
+            font-weight: bold;
+            font-size: 15px;
+            gap: 10px;
+        }
+
+
+        .logobase {
+            display: flex;
+            align-items: center;
+            margin-top: 20px;
+            margin-left: 20px;
+            gap: 5px;
+            font-size: 20px;
+            font-family: "Aref Ruqaa Ink", serif;
+            font-weight: bold;
+            color: #ffffff;
+        }
+
+        .logobase img {
+            height: auto;
+            width: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="logobase"><img src="/favicon.png" alt="logo">AB Music
+    </div>
+    <div id="card">
+        <div id="upper-side">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="tick"
+                viewBox="0 0 16 16">
+                <path
+                    d="M10.067.87a2.89 2.89 0 0 0-4.134 0l-.622.638-.89-.011a2.89 2.89 0 0 0-2.924 2.924l.01.89-.636.622a2.89 2.89 0 0 0 0 4.134l.637.622-.011.89a2.89 2.89 0 0 0 2.924 2.924l.89-.01.622.636a2.89 2.89 0 0 0 4.134 0l.622-.637.89.011a2.89 2.89 0 0 0 2.924-2.924l-.01-.89.636-.622a2.89 2.89 0 0 0 0-4.134l-.637-.622.011-.89a2.89 2.89 0 0 0-2.924-2.924l-.89.01zm.287 5.984-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7 8.793l2.646-2.647a.5.5 0 0 1 .708.708" />
+            </svg>
+            <h3 id="status">Success</h3>
+        </div>
+        <div id="lower-side">
+            <p id="message">Congratulations, your account has been successfully created.</p>
+        </div>
+
+        <button type="submit">
+            <a href="/login/login.html">Continue to login - ></a>
+        </button>
+        <button>
+            <a href="/calc/calc.html" target="_blank">Calculator</a>
+        </button>
+    </div>
+</body>
+
+</html>
