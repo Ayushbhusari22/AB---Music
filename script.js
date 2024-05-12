@@ -148,20 +148,7 @@ const makeAllBackground = () => {
     el.style.background = "rgba(16, 7, 73 , .0)";
   });
 };
-let search_result = document.getElementsByClassName("search_result")[0];
-
-songs.forEach((element) => {
-  const { id, songName, Poster } = element;
-  let view = document.createElement("a");
-  view.classList.add("view");
-  view.href = "#" + id;
-  view.innerHTML = `
-  <img src="${Poster}" alt="">
-  <div class="content">${songName}
-  </div>
-  `;
-  search_result.appendChild(view);
-});
+////
 let input = document.getElementsByTagName("input")[0];
 const playlistsContainer = document.querySelector(".playlists");
 const songsContainer = document.querySelector(".menu_song");
@@ -375,44 +362,3 @@ next.addEventListener("click", () => {
   masterPlay.target.classList.add("bi-pause-fill");
 });
 
-// let search_x2 = document.getElementsByClassName('search_x2')[0];
-
-// window.addEventListener('load', () => {
-//   songs.forEach(element => {
-//     const {poster , songName ,subtitle , url} = element;
-
-// let card = document.createElement('a');
-// card.href = url;
-// card.innerHTML = `<img src="${poster}" alt="">
-//                                 <div class="content">
-//                                     <h6>${songName}</h6>
-//                                     <p>${year}</p>
-//                                 </div>`;
-
-//                                 search_x2.appendChild(card);
-//   })
-// })
-
-// let search = document.getElementById('search')
-// let search_icon = document.getElementById("search_icon");
-
-// search_icon.addEventListener('click', () => {
-//   search.classList.toggle('search_input');
-// })
-
-// search.addEventListener('keyup', () => {
-//   let  filter = search.value.toUpperCase();
-//   let a = search_x2.getElementsByTagName('a');
-//   for (let i = 0; i < a.length; i++) {
-//     let b = a[i].getElementsByClassName('content'[0]);
-//     let c = b.getElementsByClassName('h6')[0];
-
-//     let TextValue = c.textContent || c.innerText;
-//     if (TextValue.toUpperCase().indexOf(filter) > -1) {
-//       a[i].style.dislay ='';
-//     } else {
-
-//     }
-
-//   }
-// })
